@@ -1,0 +1,650 @@
+body {
+    background: linear-gradient(to right, grey, white, grey);
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+
+nav {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    padding:30px;
+    font-size: 20px;
+    color:white;
+    
+    
+    
+}
+
+aside {
+  
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin-top:10%;
+  margin-bottom: 30px;
+  justify-content: space-around;
+  height: 50vh;
+  align-items: center;
+  font-size: 25px;
+  background-color: white;
+  border-radius: 5px;
+  padding:30px;
+  
+}
+
+.stack {
+  text-align: right;
+  margin-right: 10px;
+  color: black;
+}
+
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#presentation {
+  
+    margin-top: 100px;
+    display: flex;
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    width:70%;
+    align-self: center;
+    
+    
+
+}
+h1 {
+    font-size: 40px;
+    align-self: center;
+    margin:30px 0px 50px 0px;
+    text-align: center;
+}
+
+p {
+    font-size:20px;
+    line-height: 30px;
+}
+
+.grey {
+  color:grey;
+}
+
+.btn {
+    padding:15px;
+    margin: 20px 20px 0 0;
+    background-color: green;
+    color:white;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    width:fit-content;
+    border:none;
+}
+
+.btn:hover {
+  background-color: white;
+  
+  color:black;
+}
+
+
+
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width:50%;
+  margin-right: 30%;
+  margin-top: 10%;
+    
+}
+
+.small {
+  margin: 10px;
+}
+
+.small:hover {
+  box-shadow: 2px 2px 4px #717171;
+  width:35px;
+  height: 35px;
+}
+
+
+.a {
+    text-decoration: none;
+    color:black;
+    padding:20px;
+    border-radius: 15px;
+}
+
+.a:hover {
+  background-color: #CECECE;
+  scale:1.1;
+
+}
+
+
+
+.skillBox {
+    align-items: flex-end;
+    margin-top: 10%;
+}
+
+.learning {
+  font-weight: 400;
+  color:#CECECE;
+}
+
+.main {
+  font-weight: 1000;
+}
+
+.bright {
+  background-color: #313131;
+  padding:10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#portfolio {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+        
+}
+
+
+
+h2 {
+    font-size: 40px;
+    justify-self: center;
+    margin: 50px 0 50px 0;
+    text-transform: uppercase;
+
+
+    
+}
+
+.carousel {
+    width:50%;
+    padding:30px;
+    background-color: #717171
+    
+}
+
+
+
+
+.description {
+    margin-top: 20px;
+    color:white;
+    background-color: #282828;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.row {
+    background-color: grey;
+}
+
+
+
+#contacts {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    flex-wrap: wrap;
+    width:100%;
+    
+}
+
+.contactItems {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    padding: 20px;
+}
+
+
+
+.subcontainerTwo {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.subcontainerThree {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.par {
+    margin-left: 10px;
+    align-self:flex-start;
+}
+
+.par-subcontainer-contact {
+    font-size: 25px;
+    margin-top:20px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+.contact-box-par {
+    font-weight: 600;
+    
+}
+
+.h2-subcontainer-contact {
+    font-weight: 600;
+    text-align: center;
+}
+
+.contactsFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+}   
+
+
+.footer {
+    margin:20px;
+}
+
+
+.form-container {
+  width: 30%;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 20px;
+  font-family: inherit;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: black;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: black;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #0A8860;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #0A8860;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: white;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  align-self: center;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #0A8860;
+  border-color: #0A8860;
+}
+
+
+.pulse {
+    animation: pulse 1.5s infinite ease-in-out;
+    animation-delay: 3;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+        
+    
+    
+  }
+  50% {
+    transform: scale(1.2);
+    
+    
+  }
+  100% {
+    transform: scale(1);
+    
+  }
+}
+
+
+.pulseSlow {
+    animation: pulse 1.5s infinite ease-in-out;
+    animation-delay: 3;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+        
+    
+    
+  }
+  50% {
+    transform: scale(1.05);
+    
+    
+  }
+  100% {
+    transform: scale(1);
+    
+  }
+}
+
+.contacts2 {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.media {
+  margin-top: 50px;
+  width:50px;
+  height: 50px;
+}
+
+
+
+@media all and (max-width:1200px) {
+
+  nav {
+    width:100%;
+    justify-content: space-between;
+  }
+
+  .text {
+    width:70%;
+    margin-right: 30%;
+    margin-top: 10%;
+    
+}
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 100px;
+    margin:0;
+    
+    
+  }
+
+  #presentation {
+    margin-top: 100px;
+    margin-left: 15%;
+    margin-right: 10%;
+    width:70%;
+    
+  }
+
+  .carousel {
+    width:70%;
+  }
+
+  .carousel-caption {
+    width:90%;
+  }
+
+}
+
+@media all and (max-width:1000px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  .text {
+    width:60%;
+    margin-right: 20%;
+    
+    
+}
+
+  #contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactItems {
+    display: flex;
+    
+    width:80%;
+    
+  }
+
+  .contacts2 {
+    
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    
+  }
+
+  .form-container {
+    width:70%;
+  }
+
+  #presentation {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width:90%;
+    
+  }
+
+  .animPar2 {
+    width:100%;
+  }
+
+  .animBtn {
+    justify-self: center;
+   
+    
+  }
+
+  
+
+}
+
+@media all and (max-width:500px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
+
+
+  .text {
+    width:90%;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  
+
+  nav {
+    padding:0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  p, .p {
+    font-size: 12px;
+    margin-right: 5px;
+    
+  }
+  
+
+  aside {
+  width: 90%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-items: center;
+  font-size: 15px;
+  
+  padding:5px;
+  
+}
+
+#presentation {
+    margin-top: 30px;
+    width:90%;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .skillBox, .skillGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding:0;
+    padding-top: 20px;
+    
+}
+
+.skills__data {
+  width:100px;
+  height: 100px;
+  text-align: center;
+}
+
+.carousel {
+    width:90%;
+    padding:10px;
+  }
+
+  .par-subcontainer-contact, .skills__name {
+    font-size: 15px;
+  }
+
+  .a, a {
+    font-size: 13px;
+  }
+
+  .navigation {
+    height: 120px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+  
+ h2 {
+    font-size: 20px;
+  }
+
+  .form_container {
+    font-size: 15px;
+  }
+
+
+}
+
