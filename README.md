@@ -1,20 +1,12 @@
 # Hello
 
-My name is Maria
+## My latest project (internship)
 
-I'm a frontend/fullstack (node.js) developer
-
-My portfolio https://portfolio-maria-prusakova.netlify.app/
-
-## My background
-
-I don't have tech specialised higher education, but I've got economic (advanced mathematics included) and law degrees
-
-## Hard skills
-
-HTML/CSS(SASS)  JS   REACT/Redux toolkit   GSAP   Bootstrap   Figma   Manual testing   Node.js   Express.js   TypeScript  FSD 
-
-Now I'm learning Flutter, SQL, automation testing with Python.
+During internship our team was refactoring commercial app for profeccional designer. Tht project contains frontend and backend parts. 
+We made this project more compliable with FSD architecture. The app also provides admin panel for the owner.
+We were supposed to work only with frontend part of the project, but I faced some tough problems on backend with fething any data with POST and PUT requests.
+During learning Node.js I managed to solve the problems by creating my own database on MongoDB.
+Feel free to check our work and ask questions https://github.com/pusliaMary/Designer-frontend
 
 ## My pet projects
 
@@ -33,33 +25,3 @@ https://github.com/pusliaMary/Progress.git
 Personal investment app now shows the power of compound interest only
 https://github.com/pusliaMary/Couple-Investment.git
 
-## Soft skills
-
-I love learning, solving problems. I am reasonable, accustomed to making decisions and taking responsibility.
-I have experience managing groups of people (not in IT area).
-I am empathetic, persistent, resilient, curious, optimistic, stable in crisis situations, and with the right experience, I am able to identify the key tasks.
-
-## Lang
-
-Russian native
-English B2/C1
-
-## My eagerness
-
-I'm eager to work. I'd like to get broad on hands experience in software engineering, data science.
-I want to learn modern approaches to create websites and applications, databases. 
-I'm addicted to gamification and complicated animation technologies.
-
-## How to reach me
-
-Email: pusliaprus@gmail.com
-GitHub: https://github.com/pusliaMary
-Telegram: https://t.me/mashaavdp
-
-## Special thanks
-
-CanSheCode - alma Mater
-
-CosdenSolutions
-
-Result University
