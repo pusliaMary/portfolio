@@ -21,423 +21,366 @@
   <body>
     <div class="wrapper">
       <aside class="navigation">
-        <a class="a" href="#presentation">About</a>
-        <a class="a pulse" href="#portfolio">Projects</a>
-        <a class="a" href="#contacts">Contacts</a>
+  <!-- Ссылки на разделы с поддержкой перевода текста -->
+  <a class="a" href="#presentation" data-i18n-en="About" data-i18n-ru="Обо мне">About</a>
+  <a class="a pulse" href="#portfolio" data-i18n-en="Projects" data-i18n-ru="Проекты">Projects</a>
+  <a class="a" href="#contacts" data-i18n-en="Contacts" data-i18n-ru="Контакты">Contacts</a>
 
-        <div class="contacts">
-          <a class="" href="https://wa.me/+79200449070" target="_blank"
-            ><img
-              class="small"
-              src="assets/img/whatsapp.png"
-              alt="whatsapp"
-              width="30px"
-          /></a>
-          <a class="" href="https://t.me/mashaavdp" target="_blank"
-            ><img
-              class="small"
-              src="assets/img/telegram.png"
-              alt="telegram"
-              width="30px"
-          /></a>
-          <a class="" href="mailto:pusliaprus@gmail.com" target="_blank"
-            ><img class="small" src="assets/img/gmail.png" alt="email" width="30px"
-          /></a>
-          <a class="" href="https://github.com/pusliaMary" target="_blank"
-            ><img class="small" src="assets/img/github.png" alt="github" width="30px"
-          /></a>
-        </div>
-      </aside>
+  <!-- Блок контактов с поддержкой перевода aria-label для экранных дикторов -->
+  <div class="contacts">
+    <a href="https://wa.me" 
+       target="_blank" 
+       data-i18n-aria-en="Contact via WhatsApp" 
+       data-i18n-aria-ru="Связаться через WhatsApp">
+      <img class="small" src="assets/img/whatsapp.png" alt="whatsapp" width="30px" />
+    </a>
+    
+    <a href="https://t.me" 
+       target="_blank" 
+       data-i18n-aria-en="Contact via Telegram" 
+       data-i18n-aria-ru="Связаться через Telegram">
+      <img class="small" src="assets/img/telegram.png" alt="telegram" width="30px" />
+    </a>
+    
+    <a href="mailto:pusliaprus@gmail.com" 
+       target="_blank" 
+       data-i18n-aria-en="Send an email" 
+       data-i18n-aria-ru="Написать на электронную почту">
+      <img class="small" src="assets/img/gmail.png" alt="email" width="30px" />
+    </a>
+    
+    <a href="https://github.com" 
+       target="_blank" 
+       data-i18n-aria-en="Visit GitHub profile" 
+       data-i18n-aria-ru="Открыть профиль на GitHub">
+      <img class="small" src="assets/img/github.png" alt="github" width="30px" />
+    </a>
+  </div>
+</aside>
+
 
       <section id="presentation">
-        <div class="text">
-          <p class="animPar1"></p>
-          <h1>Hello, my name is Maria</h1>
-          <p class="animPar2">
-            I am a determined fullstack developer with curiosity and drive to
-            create structured, beautiful and friendly interfaces, reliable
-            databases. <br />I'm eager to learn modern approaches to create
-            websites and applications. I'm addicted to gamification and
-            complicated animation technologies
-          </p>
-          <a href="assets/CV.docx" download="CV.docx"
-            ><button
-              class="animBtn btn d-inline-flex align-items-center grey"
-              type="button"
-            >
-              Download CV
-            </button></a
-          >
-          <a href="assets/recommendation.pdf" download="recommendation.pdf"
-            ><button
-              class="animBtn btn d-inline-flex align-items-center grey"
-              type="button"
-            >
-              Download recommendation
-            </button></a
-          >
+        <div>
+  <div class="lang-switcher lang-en">
+    <button class="lang-btn to-en" data-lang="en" aria-label="Switch to English">EN</button>
+    <button class="lang-btn to-ru" data-lang="ru" aria-label="Переключить на русский язык">RU</button>
+  </div>
+
+  <div class="text">
+    <p class="animPar1"></p>
+    
+    <!-- Заголовок приветствия -->
+    <h1 data-i18n-en="Hello, my name is Maria" data-i18n-ru="Привет, меня зовут Мария">Hello, my name is Maria</h1>
+    
+    <!-- Описание обо мне -->
+    <p class="animPar2" 
+       data-i18n-en="I am a determined fullstack developer with curiosity and drive to create structured, beautiful and friendly interfaces, reliable databases. <br />I'm eager to learn modern approaches to create websites and applications. I'm addicted to gamification and complicated animation technologies" 
+       data-i18n-ru="Я целеустремленный fullstack-разработчик с искренним интересом и стремлением создавать структурированные, красивые и удобные интерфейсы, а также надежные базы данных. <br />Я стремлюсь изучать современные подходы к созданию сайтов и приложений. Увлекаюсь геймификацией и сложными анимационными технологиями">
+      I am a determined fullstack developer with curiosity and drive to create structured, beautiful and friendly interfaces, reliable databases. <br />I'm eager to learn modern approaches to create websites and applications. I'm addicted to gamification and complicated animation technologies
+    </p>
+    
+    <!-- Кнопка Скачать Резюме -->
+    <a href="assets/CV.docx" download="CV.docx">
+      <button class="animBtn btn d-inline-flex align-items-center grey" type="button" 
+              data-i18n-en="Download CV" data-i18n-ru="Скачать резюме">
+        Download CV
+      </button>
+    </a>
+    
+    <!-- Кнопка Скачать Рекомендацию -->
+    <a href="assets/recommendation.pdf" download="recommendation.pdf">
+      <button class="animBtn btn d-inline-flex align-items-center grey" type="button" 
+              data-i18n-en="Download recommendation" data-i18n-ru="Скачать рекомендацию">
+        Download recommendation
+      </button>
+    </a>
+  </div>
+
+  <div class="skillBox" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+    <ul class="skillGroup" id="skill__group">
+      <li class="skills__data"><div><h3 class="skills__name main">JavaScript</h3></div></li>
+      <li class="skills__data"><div><h3 class="skills__name main">React</h3></div></li>
+      <li class="skills__data"><div><h3 class="skills__name main">Redux</h3></div></li>
+      <li class="skills__data"><div><h3 class="skills__name">HTML</h3></div></li>
+      <li class="skills__data"><div><h3 class="skills__name">CSS</h3></div></li>
+      <li class="skills__data"><div><h3 class="skills__name">Git</h3></div></li>
+      <li class="skills__data"><div><h3 class="skills__name">Bootstrap</h3></div></li>
+      <li class="skills__data"><div><h3 class="skills__name">Figma</h3></div></li>
+      <li class="skills__data"><div><h3 class="skills__name">GSAP</h3></div></li>
+      
+      <!-- Способность переведена, так как содержит текст -->
+      <li class="skills__data">
+        <div>
+          <h3 class="skills__name" data-i18n-en="Manual qa" data-i18n-ru="Ручное тестирование">Manual qa</h3>
         </div>
+      </li>
+      
+      <li class="skills__data"><div><h3 class="skills__name main">Node.js</h3></div></li>
+      <li class="skills__data"><div><h3 class="skills__name main">TypeScript</h3></div></li>
+      <li class="skills__data"><div><h3 class="skills__name learning">SQL</h3></div></li>
+      <li class="skills__data"><div><h3 class="skills__name learning">Flutter</h3></div></li>
+    </ul>
+  </div>
+</section>
 
-        <div
-          class="skillBox"
-          style="
-            translate: none;
-            rotate: none;
-            scale: none;
-            transform: translate(0px, 0px);
-          "
-        >
-          <ul class="skillGroup" id="skill__group">
-            <li class="skills__data">
-              <div>
-                <h3 class="skills__name main">JavaScript</h3>
-              </div>
-            </li>
-
-            <li class="skills__data">
-              
-              <div>
-                <h3 class="skills__name main">React</h3>
-              </div>
-            </li>
-
-            <li class="skills__data">
-              
-              <div>
-                <h3 class="skills__name main">Redux</h3>
-              </div>
-            </li>
-
-            <li class="skills__data">
-              
-              <div>
-                <h3 class="skills__name">HTML</h3>
-              </div>
-            </li>
-
-            <li class="skills__data">
-              
-              <div>
-                <h3 class="skills__name">CSS</h3>
-              </div>
-            </li>
-
-            <li class="skills__data">
-              
-              <div>
-                <h3 class="skills__name">Git</h3>
-              </div>
-            </li>
-
-            <li class="skills__data">
-              
-              <div>
-                <h3 class="skills__name">Bootstrap</h3>
-              </div>
-            </li>
-
-            <li class="skills__data">
-              
-              <div>
-                <h3 class="skills__name">Figma</h3>
-              </div>
-            </li>
-
-            <li class="skills__data">
-              
-              <div>
-                <h3 class="skills__name">GSAP</h3>
-              </div>
-            </li>
-
-            <li class="skills__data">
-              
-              <div>
-                <h3 class="skills__name">Manual qa</h3>
-              </div>
-            </li>
-
-            <li class="skills__data">
-              
-              <div>
-                <h3 class="skills__name main">Node.js</h3>
-              </div>
-            </li>
-
-            <li class="skills__data">
-              
-              <div>
-                <h3 class="skills__name main">TypeScript</h3>
-              </div>
-              <div>
-              </li>
-              
-              <li class="skills__data">
-                <div>
-                  <h3 class="skills__name learning">SQL</h3>
-              </div>
-              </li>
-              
-              <li class="skills__data">
-              <div>
-                <h3 class="skills__name learning">Flutter</h3>
-              </div>
-              </li>
-            </li>
-          </ul>
-        </div>
-      </section>
     </div>
 
     <section id="portfolio">
       <h2>Projects</h2>
 
-      <div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-inner">
+      <div class="custom-carousel">
+        <div class="carousel-container">
+          <button
+            class="nav-btn prev-btn"
+            aria-label="Предыдущий слайд"
+          >&#10094</button>
+          <button
+            class="nav-btn next-btn"
+            aria-label="Следующий слайд"
+          >&#10095</button>
 
-          <div class="carousel-item active">
-            <img src="assets/gif/cooking.gif" class="w-100" alt="..." />
-
-            <div class="d-none d-md-block">
-              <p class="description">
-                A lightweight, responsive web application designed for 
-                quick recipe discovery and minimal-effort meal planning. 
-                Built with performance and clean code in mind, 
-                it delivers a seamless user experience using a modern frontend stack and efficient state management. 
-                Optimized for fast loading including Cloudinary images storage
-              </p>
-              <p class="stack">
-                HTML/SASS, JS, <b>REACT</b>, <b>Redux Toolkit</b>, <b>FSD</b>, Mobile-first, <b>Node.js</b>,  <b>MongoDB</b>
-              </p>
+          <div class="carousel-slides-wrapper">
+            <!-- Слайд 1 (Lazy Cooking) -->
+            <div class="carousel-slide active">
+              <div class="image-wrapper">
+                <img
+                  src="assets/gif/cooking.gif"
+                  alt="Lazy Cooking"
+                  class="slide-img"
+                />
+              </div>
+              <div class="info-wrapper">
+                <div class="project">
+                  <p class="description">
+                    A lightweight, responsive web application designed for quick
+                    recipe discovery and minimal-effort meal planning. Built
+                    with performance and clean code in mind, it delivers a
+                    seamless user experience using a modern frontend stack and
+                    efficient state management. Optimized for fast loading
+                    including Cloudinary images storage
+                  </p>
+                  <p class="stack">
+                    HTML/SASS, JS, <b>REACT</b>, <b>Redux Toolkit</b>,
+                    <b>FSD</b>, Mobile-first, <b>Node.js</b>, <b>MongoDB</b>
+                  </p>
+                </div>
+                <div class="contacts">
+                  <a
+                    href="https://lazy-cooking.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/pusliaMary/Easy-cooking-frontend.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green"
+                    >Code</a
+                  >
+                </div>
+              </div>
             </div>
 
-            <div class="contacts">
-              <a
-                href="https://lazy-cooking.netlify.app"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Demo</a
-              >
-              <a
-                href="https://github.com/pusliaMary/Easy-cooking-frontend.git"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Code</a
-              >
+            <!-- Слайд 2 (Designer Portfolio) -->
+            <div class="carousel-slide">
+              <div class="image-wrapper">
+                <img
+                  src="assets/gif/designer.gif"
+                  alt="Designer Portfolio"
+                  class="slide-img"
+                />
+              </div>
+              <div class="info-wrapper">
+                <div class="project">
+                  <p class="description">
+                    Commercial app for professional designer. Complex user
+                    experience logic has been implemented in the portfolio
+                    section. An admin panel with authentication has been
+                    developed for the app owner
+                  </p>
+                  <p class="stack">
+                    HTML, CSS(SASS), JS, <b>REACT</b>, <b>Redux Toolkit</b>,
+                    Backend (<b>Node.js + MongoDB</b>)
+                  </p>
+                </div>
+                <div class="contacts">
+                  <a
+                    href="https://designer-olesya-martin.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/pusliaMary/Designer-frontend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green"
+                    >Code</a
+                  >
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="carousel-item">
-            <img src="assets/gif/designer.gif" class="w-100" alt="..." />
-
-            <div class="d-none d-md-block">
-              <p class="description">
-                Commercial app for professional designer. Complex user
-                experience logic has been implemented in the portfolio section.
-                An admin panel with authentication has been developed for the
-                app owner
-              </p>
-              <p class="stack">
-                HTML, CSS(SASS), JS, <b>REACT</b>, <b>Redux Toolkit</b>, Backend
-                (<b>Node.js + MongoDB</b>)
-              </p>
+            <div class="carousel-slide">
+              <div class="image-wrapper">
+                <img
+                  src="assets/gif/eco.gif"
+                  alt="EcoStore"
+                  class="slide-img"
+                />
+              </div>
+              <div class="info-wrapper">
+                <div class="text-content">
+                  <div class="project">
+                    <p class="description">
+                      Application for an eco-friendly goods store. Includes a
+                      product gallery, filter search, shopping cart, and
+                      favorites
+                    </p>
+                    <p class="stack">
+                      HTML, CSS, JS, <b>REACT</b>, <b>Redux Toolkit</b>, GSAP
+                    </p>
+                  </div>
+                </div>
+                <div class="contacts">
+                  <a
+                    href="https://shop-eco-friendly.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/pusliaMary/EcoStore.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green"
+                    >Code</a
+                  >
+                </div>
+              </div>
             </div>
 
-            <div class="contacts">
-              <a
-                href="https://designer-olesya-martin.netlify.app"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Demo</a
-              >
-              <a
-                href="https://github.com/pusliaMary/Designer-frontend"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Code</a
-              >
+            <!-- Слайд 4 (Ayn Rand Meditation) -->
+            <div class="carousel-slide">
+              <div class="image-wrapper">
+                <img
+                  src="assets/gif/ayn.gif"
+                  alt="Ayn Rand Meditation"
+                  class="slide-img"
+                />
+              </div>
+              <div class="info-wrapper">
+                <div class="text-content">
+                  <div class="project">
+                    <p class="description">
+                      Music meditation app based on Ayn Rand references, images
+                      and quotes.
+                    </p>
+                    <p class="stack">HTML, CSS, JS, GSAP</p>
+                  </div>
+                </div>
+                <div class="contacts">
+                  <a
+                    href="https://ayn-rand-meditation.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/pusliaMary/Ayn-Rand-Meditation.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green"
+                    >Code</a
+                  >
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="carousel-item">
-            <img src="assets/gif/eco.gif" class="w-100" alt="..." />
-            <div class="d-none d-md-block">
-              <p class="description">
-                Application for an eco-friendly goods store. Includes a product
-                gallery, filter search, shopping cart, and favorites
-              </p>
-              <p class="stack">
-                HTML, CSS, JS, <b>REACT</b>, <b>Redux Toolkit</b>, GSAP
-              </p>
+            <div class="carousel-slide">
+              <div class="image-wrapper">
+                <img
+                  src="assets/gif/progress.gif"
+                  alt="Progress Accountability"
+                  class="slide-img"
+                />
+              </div>
+              <div class="info-wrapper">
+                <div class="text-content">
+                  <div class="project">
+                    <p class="description">
+                      An app for honest self-accounting. It provides the
+                      opportunity to gradually learn how to plan your life from
+                      simple to complex — from easy to-do list to an achieving
+                      goals strategy
+                    </p>
+                    <p class="stack">HTML, CSS, JS, <b>REACT</b>, GSAP</p>
+                  </div>
+                </div>
+                <div class="contacts">
+                  <a
+                    href="https://progress-accountability.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/pusliaMary/Progress.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green"
+                    >Code</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="contacts">
-              <a
-                href="https://shop-eco-friendly.netlify.app/"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Demo</a
-              >
-              <a
-                href="https://github.com/pusliaMary/EcoStore.git"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Code</a
-              >
-            </div>
-          </div>
 
-          <div class="carousel-item">
-            <img src="assets/gif/ayn.gif" class="d-block w-100" alt="..." />
-            <div class="d-none d-md-block">
-              <p class="description">
-                Music meditation app based on Ayn Rand references, images and
-                quotes
-              </p>
-              <p class="stack">HTML, CSS, JS, GSAP</p>
-            </div>
-            <div class="contacts">
-              <a
-                href="ayn-rand-meditation.netlify.app"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Demo</a
-              >
-              <a
-                href="https://github.com/pusliaMary/Ayn-Rand-Meditation.git"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Code</a
-              >
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="assets/gif/shop.gif" class="w-100" alt="..." />
-            <div class="d-none d-md-block">
-              <p class="description">
-                Application for ordering food at a restaurant. It has a list of
-                dishes, search filters, and a shopping cart
-              </p>
-              <p class="stack">
-                HTML, CSS, JS, <b>REACT</b>, <b>Redux Toolkit</b>, GSAP
-              </p>
-            </div>
-            <div class="contacts">
-              <a
-                href="https://order-dishes-app.netlify.app"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Demo</a
-              >
-              <a
-                href="https://github.com/pusliaMary/RestaurantOrderApp.git"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Code</a
-              >
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="assets/gif/progress.gif" class="w-100" alt="..." />
-            <div class="d-none d-md-block">
-              <p class="description">
-                An app for honest self-accounting. It provides the opportunity
-                to gradually learn how to plan your life from simple to complex
-                — from easy to-do list to an achieving goals strategy
-              </p>
-              <p class="stack">HTML, CSS, JS, <b>REACT</b>, GSAP</p>
-            </div>
-            <div class="contacts">
-              <a
-                href="https://progress-accountability.netlify.app"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Demo</a
-              >
-              <a
-                href="https://github.com/pusliaMary/Progress.git"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Code</a
-              >
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="assets/gif/meal.gif" class="w-100" alt="..." />
-            <div class="d-none d-md-block">
-              <p class="description">
-                Application for daily meal planning using specified ingredients
-              </p>
-              <p class="stack">HTML, CSS, JS, <b>REACT</b>, GSAP</p>
-            </div>
-            <div class="contacts">
-              <a
-                href="https://meal-planning-application.netlify.app"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Demo</a
-              >
-              <a
-                href="https://github.com/pusliaMary/mealPlanning.git"
-                target="_blank"
-                class="btn btn-dark d-inline-flex align-items-center"
-                >Code</a
-              >
+            <!-- Слайд 6 (Couple Investment) -->
+            <div class="carousel-slide">
+              <div class="image-wrapper">
+                <img
+                  src="assets/gif/invest.gif"
+                  alt="Couple Investment"
+                  class="slide-img"
+                />
+              </div>
+              <div class="info-wrapper">
+                <div class="project">
+                  <div class="text-content">
+                    <p class="description">
+                      An app shows the power of compound interest. Small
+                      investments yield exponentially greater returns in the
+                      future (try 11+ years)
+                    </p>
+                    <p class="stack">HTML, CSS, JS, GSAP, BOOTSTRAP</p>
+                  </div>
+                </div>
+                <div class="contacts">
+                  <a
+                    href="https://couple-investment.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/pusliaMary/Couple-Investment.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-green"
+                    >Code</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="carousel-item">
-          <img src="assets/gif/invest.gif" class="d-block w-100" alt="..." />
-          <div class="d-none d-md-block">
-            <p class="description">
-              An app shows the power of compound interest. Small investments
-              yield exponentially greater returns in the future (try 11+ years)
-            </p>
-            <p class="stack">HTML, CSS, JS, GSAP, BOOTSTRAP</p>
-          </div>
-          <div class="contacts">
-            <a
-              href="couple-investment.netlify.app"
-              target="_blank"
-              class="btn btn-dark d-inline-flex align-items-center"
-              >Demo</a
-            >
-            <a
-              href="https://github.com/pusliaMary/Couple-Investment.git"
-              target="_blank"
-              class="btn btn-dark d-inline-flex align-items-center"
-              >Code</a
-            >
-          </div>
-        </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="prev"
-        >
-          <span
-            class="carousel-control-prev-icon bright"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon bright"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
 
@@ -516,32 +459,59 @@
         /></a>
       </div>
 
-<div class="form-container"> 
-  <h2 class="h2-subcontainer-contact">Ask me a question</h2> 
-  
-  <form class="form" id="contact-form" action="https://formspree.io/f/meoqovek" method="POST">
-    
-    <div class="form-group"> 
-      <label for="email">Email for response</label> 
-      <input type="email" id="email" name="email" required="" /> 
-    </div> 
-    
-    <div class="form-group"> 
-      <label for="textarea">How Can I Help You?</label> 
-      <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea> 
-    </div> 
-    
-    <div class="form-group privacy-policy-group">
-      <input type="checkbox" id="privacy-policy" name="privacy_policy" required="" />
-      <label for="privacy-policy">
-        I accept the <a href="./assets/personal_info_en.docx" download="Privacy_Policy.docx" target="_blank">Privacy Policy</a>
-      </label>
-    </div>
-    
-    <button class="form-submit-btn" id="submit-btn" type="submit" disabled>Submit</button> 
-  </form> 
-</div>
+      <div class="form-container">
+        <h2 class="h2-subcontainer-contact">Ask me a question</h2>
 
+        <form
+          class="form"
+          id="contact-form"
+          action="https://formspree.io/f/meoqovek"
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="email">Email for response</label>
+            <input type="email" id="email" name="email" required="" />
+          </div>
+
+          <div class="form-group">
+            <label for="textarea">How Can I Help You?</label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              rows="10"
+              cols="50"
+              required=""
+            ></textarea>
+          </div>
+
+          <div class="form-group privacy-policy-group">
+            <input
+              type="checkbox"
+              id="privacy-policy"
+              name="privacy_policy"
+              required=""
+            />
+            <label for="privacy-policy">
+              I accept the
+              <a
+                href="./assets/personal_info_en.docx"
+                download="Privacy_Policy.docx"
+                target="_blank"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+
+          <button
+            class="form-submit-btn"
+            id="submit-btn"
+            type="submit"
+            disabled
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
 
     <footer>
@@ -563,7 +533,7 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    
+
     <script src="script.js"></script>
   </body>
 </html>
