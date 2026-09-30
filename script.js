@@ -1,39 +1,45 @@
-gsap.to('h1', {
-    onUpdate: function () {
-        
-        if (window.innerWidth <600) {
-            gsap.to('h1', {y:30, duration:2, delay:1, opacity:1, ease:"bounce"});
-        }
+let mm = gsap.matchMedia();
 
-        else if (window.innerWidth <1000) {
-            gsap.to('h1', {x:100, duration:2, delay:1, opacity:1, ease:"bounce"});
-        }
+mm.add({
+  isMobile: "(max-width: 599px)",
+  isTablet: "(min-width: 600px) and (max-width: 999px)",
+  isDesktopSmall: "(min-width: 1000px) and (max-width: 1199px)",
+  isDesktopLarge: "(min-width: 1200px)"
+}, (context) => {
+  let { isMobile, isTablet, isDesktopSmall, isDesktopLarge } = context.conditions;
+  
+  let targetX = 0;
+  let targetY = 0;
+  let duration = 2;
 
-        else if (window.innerWidth <1200) {
-            gsap.to('h1', {x:150, duration:2, delay:1, opacity:1, ease:"bounce"});
-        }
+  if (isMobile) { targetY = 30; }
+  else if (isTablet) { targetX = 100; }
+  else if (isDesktopSmall) { targetX = 150; }
+  else if (isDesktopLarge) { targetX = 200; duration = 3; }
 
-        else {
-            gsap.to('h1', {x:200, duration:3, opacity:1, ease:"bounce"});
-        }
-        
-        }
-    }   
-)
+  gsap.to("h1", {
+    x: targetX,
+    y: targetY,
+    duration: duration,
+    delay: isMobile ? 1 : 0,
+    opacity: 1,
+    ease: "bounce"
+  });
+});
 
+gsap.from(".animPar2", { x: 200, duration: 2, delay: 2, opacity: 0 });
+gsap.to(".animBtn", { scale: 1.05, repeat: -1, duration: 1 });
+gsap.to(".animPar1", { text: "Web developer", duration: 3 });
 
+// Personal info
+document.addEventListener('DOMContentLoaded', function() {
+  const checkbox = document.getElementById('privacy-policy');
+  const submitBtn = document.getElementById('submit-btn');
 
+  checkbox.addEventListener('change', function() {
+    submitBtn.disabled = !this.checked;
+  });
+});
 
-
-
-gsap.from('.animPar2', {x:200, duration:2, delay:2, opacity:0})
-
-gsap.to('.animBtn', {scale:1.05, repeat:-1, duration:1})
-
-gsap.to ('.animPar1', {
-    text: 'Web developer',
-    duration:3
-    
-})
 
 
