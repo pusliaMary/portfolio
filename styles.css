@@ -1,3 +1,18 @@
+:root {
+  --bg-main: #ffffff;           /* Белый фон для всей страницы */
+  --bg-card: #ffffff;           /* Белый фон для карточек/форм */
+  --bg-input: #ffffff;          /* Белый фон для инпутов */
+  
+  --text-main: #000000;         /* Черный цвет для основного текста и заголовков */
+  --text-muted: #777777;        /* Серый цвет для подписей, плейсхолдеров и неактивных элементов */
+  
+  --border-color: #282828;      /* Серый №282828 для четких границ, рамок и линий */
+  
+  --accent-color: #0a8860;      /* Ваш акцентный зеленый для активных ссылок, кнопок и чекбоксов */
+  --accent-hover: #086f4e;      /* Чуть более темный зеленый для эффекта наведения (hover) */
+}
+
+
 body {
   background: linear-gradient(to right, grey, white, grey);
   margin: 0;
@@ -45,7 +60,6 @@ aside {
 #presentation {
   margin-top: 100px;
   display: flex;
-  flex-direction: column;
   margin-left: 25%;
   margin-right: 10%;
   margin-bottom: 1%;
@@ -65,9 +79,12 @@ p {
   line-height: 30px;
 }
 
-
 .lang-btn {
-  background: linear-gradient(135deg, rgba(50, 50, 50, 0.8), rgba(20, 20, 20, 0.8));
+  background: linear-gradient(
+    135deg,
+    rgba(50, 50, 50, 0.8),
+    rgba(20, 20, 20, 0.8)
+  );
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 8px 16px;
@@ -80,12 +97,12 @@ p {
 }
 
 .lang-btn:hover {
-  background: linear-gradient(135deg, rgba(70, 70, 70, 0.9), rgba(30, 30, 30, 0.9));
+  background: linear-gradient(
+    135deg,
+    rgba(70, 70, 70, 0.9),
+    rgba(30, 30, 30, 0.9)
+  );
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);
-}
-
-.lang-switcher {
-  align-self: flex-end;
 }
 
 .lang-switcher.lang-ru .to-ru {
@@ -95,14 +112,12 @@ p {
   display: block;
 }
 
-
 .lang-switcher.lang-en .to-en {
   display: none;
 }
 .lang-switcher.lang-en .to-ru {
   display: block;
 }
-
 
 .grey {
   color: grey;
@@ -362,6 +377,16 @@ p {
   flex-direction: column;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.lang-switcher {
+  align-self: flex-end;
+  margin-bottom: 50px;
+}
+
 .contacts {
   display: flex;
   justify-content: center;
@@ -441,6 +466,10 @@ h2 {
   text-align: center;
 }
 
+.policy {
+  color: #282828;
+}
+
 .contact-box-par {
   font-weight: 600;
 }
@@ -448,6 +477,7 @@ h2 {
 .h2-subcontainer-contact {
   font-weight: 600;
   text-align: center;
+  font-size: 24px;
 }
 
 .form-container {
@@ -532,13 +562,13 @@ h2 {
 }
 
 .form-container .privacy-policy-group input[type="checkbox"] {
-  width: auto; /* Отменяем ширину 100% от обычных инпутов */
+  width: auto;
   margin: 0;
   cursor: pointer;
 }
 
 .form-container .privacy-policy-group label {
-  font-size: 13px; /* Делаем текст соглашения еще чуть меньше */
+  font-size: 13px;
   font-weight: 400;
   color: #414141;
   margin-bottom: 0;
@@ -562,28 +592,26 @@ h2 {
   background: #313131;
   border: 1px solid #414141;
   padding: 12px 16px;
-  font-size: 14px; /* Уменьшено со значения inherit */
+  font-size: 14px;
   gap: 8px;
   margin-top: 8px;
   cursor: pointer;
   border-radius: 6px;
   align-self: center;
-  transition: all 0.2s ease; /* Плавность смены цвета */
+  transition: all 0.2s ease;
 }
 
-/* Эффект при наведении работает ТОЛЬКО когда кнопка НЕ заблокирована */
 .form-container .form-submit-btn:not(:disabled):hover {
   background-color: #0a8860;
   border-color: #0a8860;
 }
 
-/* Стиль для заблокированной кнопки (более серый и некликабельный) */
 .form-container .form-submit-btn:disabled {
-  background-color: #cccccc; /* Светло-серый цвет */
+  background-color: #cccccc;
   border-color: #b0b0b0;
-  color: #777777; /* Серый текст */
-  cursor: not-allowed; /* Курсор запрета */
-  pointer-events: none; /* Отключает любые клики и hover-эффекты */
+  color: #777777;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .pulse {
@@ -663,6 +691,7 @@ h2 {
     margin-right: 10%;
     width: 70%;
   }
+}
 
 @media all and (max-width: 1000px) {
   h2 {

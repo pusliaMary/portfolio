@@ -1,3 +1,5 @@
+// GSAP
+
 let mm = gsap.matchMedia();
 
 mm.add(
@@ -39,9 +41,13 @@ mm.add(
 
 gsap.from(".animPar2", { x: 200, duration: 2, delay: 2, opacity: 0 });
 gsap.to(".animBtn", { scale: 1.05, repeat: -1, duration: 1 });
-gsap.to(".animPar1", { text: "Web developer", duration: 3 });
+gsap.to(".animPar1", { text: "Full-Stack Developer", duration: 3 });
+
+
+
 
 // Personal info
+
 document.addEventListener("DOMContentLoaded", function () {
   const checkbox = document.getElementById("privacy-policy");
   const submitBtn = document.getElementById("submit-btn");
@@ -74,29 +80,42 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// LANG SWITCHER
+
 document.addEventListener("DOMContentLoaded", () => {
   const switcher = document.querySelector(".lang-switcher");
   const langButtons = document.querySelectorAll(".lang-btn");
 
   function changeLanguage(lang) {
-    document.querySelectorAll("[data-i18n-en]").forEach((el) => {
-      el.textContent = el.getAttribute(`data-i18n-${lang}`);
-    });
-
-    document.querySelectorAll("[data-i18n-aria-en]").forEach((el) => {
-      el.setAttribute("aria-label", el.getAttribute(`data-i18n-aria-${lang}`));
-    });
-
-    if (lang === "ru") {
-      switcher.classList.remove("lang-en");
-      switcher.classList.add("lang-ru");
-    } else {
-      switcher.classList.remove("lang-ru");
-      switcher.classList.add("lang-en");
+  
+  document.querySelectorAll("[data-i18n-en]").forEach((el) => {
+    
+    const translation = el.getAttribute(`data-i18n-${lang}`);
+    
+    
+    if (translation) {
+      el.textContent = translation;
     }
+  });
 
-    localStorage.setItem("site-lang", lang);
+  document.querySelectorAll("[data-i18n-aria-en]").forEach((el) => {
+    const ariaTranslation = el.getAttribute(`data-i18n-aria-${lang}`);
+    if (ariaTranslation) {
+      el.setAttribute("aria-label", ariaTranslation);
+    }
+  });
+
+  if (lang === "ru") {
+    switcher.classList.remove("lang-en");
+    switcher.classList.add("lang-ru");
+  } else {
+    switcher.classList.remove("lang-ru");
+    switcher.classList.add("lang-en");
   }
+
+  localStorage.setItem("site-lang", lang);
+}
+
 
   langButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
