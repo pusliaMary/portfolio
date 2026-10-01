@@ -127,3 +127,38 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentLang = localStorage.getItem("site-lang") || "en";
   changeLanguage(currentLang);
 });
+
+// Night / Day theme
+
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Находим обе кнопки по их ID
+  const btnNight = document.getElementById("theme-toggle-night");
+  const btnDay = document.getElementById("theme-toggle-day");
+
+  // 2. Проверяем, какую тему пользователь выбирал ранее
+  const savedTheme = localStorage.getItem("site-theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-theme");
+  }
+
+  // 3. Функция переключения темы и сохранения состояния
+  function changeTheme(toDark) {
+    if (toDark) {
+      document.body.classList.add("dark-theme");
+      localStorage.setItem("site-theme", "dark");
+    } else {
+      document.body.classList.remove("dark-theme");
+      localStorage.setItem("site-theme", "light");
+    }
+  }
+
+  // 4. Вешаем обработчики кликов на кнопки
+  if (btnNight) {
+    btnNight.addEventListener("click", () => changeTheme(true));  // Включит темную
+  }
+
+  if (btnDay) {
+    btnDay.addEventListener("click", () => changeTheme(false));  // Вернет светлую
+  }
+});
+

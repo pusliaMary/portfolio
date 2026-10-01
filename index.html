@@ -149,7 +149,27 @@
             </a>
           </div>
         </div>
+
         <div class="column">
+          <div>
+          <div class="theme-switcher">
+            <button
+              id="theme-toggle-night"
+              class="theme-btn to-night"
+              aria-label="Включить ночной режим"
+            >
+              night
+            </button>
+
+            <button
+              id="theme-toggle-day"
+              class="theme-btn to-day"
+              aria-label="Включить дневной режим"
+            >
+              day
+            </button>
+          </div>
+
           <div class="lang-switcher lang-en">
             <button
               class="lang-btn to-en"
@@ -572,15 +592,15 @@
                 src="https://img.icons8.com/ios-filled/50/woman-head.png"
                 alt="woman-head"
               />
-              <p
-                class="contact-box-par"
-                data-i18n-en="Name"
-                data-i18n-ru="Имя"
-              >
+              <p class="contact-box-par" data-i18n-en="Name" data-i18n-ru="Имя">
                 Name
               </p>
             </div>
-            <p class="par" data-i18n-en="Maria Prusakova" data-i18n-ru="Мария Прусакова">
+            <p
+              class="par"
+              data-i18n-en="Maria Prusakova"
+              data-i18n-ru="Мария Прусакова"
+            >
               Maria Prusakova
             </p>
           </div>
@@ -653,7 +673,10 @@
             method="POST"
           >
             <div class="form-group">
-              <label for="email" data-i18n-en="Email for response" data-i18n-ru="Ваш email для обратной связи"
+              <label
+                for="email"
+                data-i18n-en="Email for response"
+                data-i18n-ru="Ваш email для обратной связи"
                 >Email for response</label
               >
               <input type="email" id="email" name="email" required="" />
